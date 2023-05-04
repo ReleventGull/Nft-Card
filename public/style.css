@@ -5,9 +5,7 @@
 h1, h2, h3, h4, p {
     margin: 0
 }
-p {
-    font-size: 18px;
-}
+
 @font-face {
     font-family: outfitBold;
     src: url(./font/Outfit-Bold.ttf);
@@ -20,7 +18,14 @@ p {
     font-family: outfitMedium;
     src: url(./font/Outfit-Medium.ttf);
 }
-
+@font-face {
+    font-family: outfitThin;
+    src: url(./font/Outfit-Thin.ttf);
+}
+@font-face {
+    font-family: outfitRegular;
+    src: url(./font/Outfit-Regular.ttf);
+}
 :root {
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
@@ -29,4 +34,88 @@ p {
     --Very-dark-blue--card-BG: hsl(216, 50%, 16%);
     --Very-dark-blue-line: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%)
+}
+
+#app {
+    background-color: var(--Very-dark-blue--main-BG);
+    display: grid;
+    place-items: center;
+    overflow-y: scroll;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very-dark-blue--card-BG);
+    border-radius: 20px;
+    padding: 40px;
+    font-size: 29px;
+    width: clamp(15rem, 15rem + 10vw, 40rem);
+}
+.itemName {
+    font-size: 2rem;
+}
+.mainImage{
+    border-radius: 20px;
+}
+.mainInfo {
+    width: 100%;
+    margin-top: 40px;
+    font-family: outfitRegular;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.inforPara {
+    color: rgb(206, 206, 206);
+    font-family: outfitThin;
+}
+.priceDay {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+}
+.price {
+    color: var(--Cyan);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.eth {
+    max-height: 100%;
+    width: 15px
+}
+.clock {
+    width: 30px
+}
+
+.creatorBox {
+    width: 100%;
+    padding: 5px;
+
+}
+.alignBox {
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+.avatar {
+    max-height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+@media screen and (max-width: 1100px) {
+    .priceDay {
+        flex-direction: column;
+    }
 }
