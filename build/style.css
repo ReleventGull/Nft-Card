@@ -54,72 +54,10 @@ h1, h2, h3, h4, p {
 }
 .itemName {
     font-size: 2rem;
-    transition: .2s;
-    width: 55%
-}
-.creatorTag {
-    color: var(--Soft-blue)
-}
-.artistsName:hover {
-    color: var(--Cyan);
-    cursor: pointer;
-}
-
-.itemName:hover {
-    color: var(--Cyan);
-    cursor: pointer;
-    transition: .2s;
 }
 .mainImage{
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    border-radius: 20px;
-    z-index: 1;
-}
-.imageBox {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 20px;
 }
-
-.viewIcon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-}
-
-.overlay {
-    background-color: var(--Cyan);
-    opacity: 50%;
-    height: 100%;
-    width: 100%;
-    z-index: 1000;
-    position: absolute;
-    display: none;
-    border-radius: 20px;
-    transition: .3s;
-}
-.imageBox {
-    cursor: pointer;
-}
-.imageBox:hover > .overlay {
-    display: block;
-}
-
-.imageBox:hover > .viewIcon  {
-    display: block;
-    z-index: 3;
-}
-
-
-
-
-
 .mainInfo {
     width: 100%;
     margin-top: 40px;

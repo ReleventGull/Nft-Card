@@ -2,7 +2,11 @@
 const App = () => {
     return (
         <div className="card">
-            <img className="mainImage" src='/images/image-equilibrium.jpg'/>
+            <div className="imageBox">
+                <div className="overlay"/>
+                <img className="mainImage" src='/images/image-equilibrium.jpg'/>
+                <img className="viewIcon" src='/images/icon-view.svg'/>
+            </div>
             <div className="mainInfo">
                 <h1 className="itemName">Equilibrium #3429</h1>
                 <p className="inforPara">Our Equilibrium collection promotes balance and calm.</p>
@@ -13,7 +17,7 @@ const App = () => {
                     <div className="creatorBox">
                     <span className="alignBox">
                         <img className="avatar" src='/images/image-avatar.png' />
-                        <span><span>Creation Of</span> Jules Wyvern</span>
+                        <span className="creatorTag">Creation Of</span><span className="artistsName">Jules Wyvern</span>
                     </span>
                     </div>
             </div>
